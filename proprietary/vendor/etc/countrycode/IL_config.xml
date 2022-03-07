@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <config name="remove_apk" value="YouTubeKids;Videos"/>
+    <config name="language" value="iw_IL"/>
+    <config name="timezone" value="Asia/Jerusalem"/>
+    <config name="keyboard_layout" value="com.android.inputdevices/com.android.inputdevices.InputDeviceReceiver/keyboard_layout_english_us|com.android.inputdevices/com.android.inputdevices.InputDeviceReceiver/keyboard_layout_hebrew"/>
+</list>

@@ -1,0 +1,13 @@
+<ellipticSensorSetup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="elliptic_sensor.xsd">
+  <sensors>
+    <sensor name="Elliptic Swipe" reader="hexagon" sensor_type="65557" audio_notify="ultrasound-gesture1" debug="true">
+    </sensor>
+    <sensor name="Elliptic Doubletap" reader="hexagon" sensor_type="65559" audio_notify="ultrasound-gesture2" debug="true">
+    </sensor>
+  </sensors>
+
+  <readers>
+    <reader name="hexagon"></reader>
+  </readers>
+</ellipticSensorSetup>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <config name="language" value="en_US"/>
+    <config name="lenovo_usage_statistics_menu" value="yes"/>
+    <config name="timezone" value="Europe/Zagreb"/>
+    <config name="regional_specialty_apk" value="GooglePay"/>
+    <config name="keyboard_layout" value="com.android.inputdevices/com.android.inputdevices.InputDeviceReceiver/keyboard_layout_english_uk|com.android.inputdevices/com.android.inputdevices.InputDeviceReceiver/keyboard_layout_croatian"/>
+</list>

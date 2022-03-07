@@ -1,0 +1,245 @@
+{
+  "config":{
+    "hw_platform": ["MTP"],
+    "soc_id": ["356"]
+  },
+  "vl53lx_0":{
+    "owner": "sns_vl53lx",
+    ".config":{
+      "owner": "sns_vl53lx",
+      "is_dri":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "hw_id":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "res_idx":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "sync_stream":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  },
+  "vl53lx_0_platform":{
+    "owner": "sns_vl53lx",
+    ".config":{
+      "owner": "sns_vl53lx",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "5"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "41"
+      },
+      "i3c_address":{ "type": "int", "ver": "0",
+        "data": "10"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "109"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/see/rail/eLDO"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".cal_data": {
+        "owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		},
+		"01": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		},
+		"02": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		},
+		"03": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		},
+		"04": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		},
+		"05": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		},
+		"06": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		}
+	},
+	".params": {
+		"owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "360.000000"
+		},
+		"01": {
+			"type": "flt",
+			"ver": "0",
+			"data": "192.000000"
+		},
+		"02": {
+			"type": "flt",
+			"ver": "0",
+			"data": "80.000000"
+		},
+		"03": {
+			"type": "flt",
+			"ver": "0",
+			"data": "650.000000"
+		},
+		"04": {
+			"type": "flt",
+			"ver": "0",
+			"data": "5000.000000"
+		},
+		"05": {
+			"type": "flt",
+			"ver": "0",
+			"data": "30000.000000"
+		},
+		"06": {
+			"type": "flt",
+			"ver": "0",
+			"data": "1000.000000"
+		},
+		"07": {
+			"type": "flt",
+			"ver": "0",
+			"data": "200.000000"
+		},
+		"08": {
+			"type": "flt",
+			"ver": "0",
+			"data": "40.000000"
+		},
+		"09": {
+			"type": "flt",
+			"ver": "0",
+			"data": "0.000000"
+		},
+		"10": {
+			"type": "flt",
+			"ver": "0",
+			"data": "40.000000"
+		},
+		"11": {
+			"type": "flt",
+			"ver": "0",
+			"data": "9.000000"
+		}
+	},
+	".off_dist": {
+		"owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "100.000000"
+		}
+	},
+	".tar_dist": {
+		"owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "1000.000000"
+		}
+	},
+	".tolerance": {
+		"owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "5.000000"
+		}
+	},
+	".xtalk_lim": {
+		"owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "3.000000"
+		}
+	},
+	".max_amb": {
+		"owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "5.000000"
+		}
+	},
+	".app_dist": {
+		"owner": "sns_vl53lx",
+		"00": {
+			"type": "flt",
+			"ver": "0",
+			"data": "650.000000"
+		},
+		"01": {
+			"type": "flt",
+			"ver": "0",
+			"data": "70.000000"
+		},
+		"02": {
+			"type": "flt",
+			"ver": "0",
+			"data": "10.000000"
+		},
+		"03": {
+			"type": "flt",
+			"ver": "0",
+			"data": "3.000000"
+		}
+	}        
+  }
+}

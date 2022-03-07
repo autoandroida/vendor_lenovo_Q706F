@@ -1,0 +1,15 @@
+{
+  "config":{
+    "hw_platform": ["MTP"],
+    "soc_id": ["356"]
+  },
+  "sns_wake_gesture":{
+    "owner": "sns_wake_gesture",
+    "require_rate": {"ver": "0","type": "flt",
+      "data": "50.0"
+    },
+    "window_size": {"ver": "0","type": "int",
+      "data": "3"
+    }
+  }
+}

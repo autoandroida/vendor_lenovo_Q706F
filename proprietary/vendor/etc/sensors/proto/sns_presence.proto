@@ -1,0 +1,52 @@
+// @file sns_presence.proto
+//
+// Defines the API for PRESENCE Sensors.
+// All PRESENCE Sensor drivers are required to comply with this API.
+// Any new functionality for PRESENCE Sensor can be defined in a
+// device specific API file.
+//
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+import "sns_physical_sensor_test.proto";
+import "sns_cal.proto";
+
+
+// Attribute requirements:
+// The PRESENCE Sensor publishes:
+// 1. SNS_STD_SENSOR_ATTRID_TYPE attribute value as "presence".
+// 2. SNS_STD_SENSOR_ATTRID_RESOLUTIONS attribute value in  
+// 3. SNS_STD_SENSOR_ATTRID_RANGES attribute values         
+// 4. See sns_std_sensor.proto for other attributes.
+
+// Handling stream requests:
+// 1. The PRESENCE Sensor supports both streaming and on-change
+//    modes and the operating mode is configured in the Registry.
+// 2. The streaming PRESENCE Sensor handles the sns_std_sensor_config
+//    request for all stream enable/update requests.
+// 3. The on-change PRESENCE Sensor handles the
+//    SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG request for
+//    all stream enable/update requests.
+// 4. In on-change mode the Sensor reports samples if detected object(s).
+
+// Handling stream events:
+// 1. The PRESENCE Sensor publishes current data stream
+//    events using the sns_std_sensor_event message.
+// 2. Each stream event contains the following output data fields where data is
+//    factory calibrated and ordered as:
+
+enum presence_data_t {
+    HOD                       = 0;
+    DISTANCE                  = 1;
+    PRESENCE                  = 2;
+}
+
+// 3. Each stream event publishes an accuracy field:
+//    SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE to mark invalid samples when hardware is
+//    yet to stabilize after the sensor is configured.
+//    SNS_STD_SENSOR_SAMPLE_STATUS_ACCURACY_HIGH to mark samples when they are valid.
+

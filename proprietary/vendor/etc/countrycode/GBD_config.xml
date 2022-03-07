@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <config name="language" value="en_GB"/>
+    <config name="lenovo_usage_statistics_menu" value="yes"/>
+    <config name="timezone" value="Europe/London"/>
+    <config name="keyboard_layout" value="com.android.inputdevices/com.android.inputdevices.InputDeviceReceiver/keyboard_layout_english_uk"/>
+</list>
